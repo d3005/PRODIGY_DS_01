@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Load your dataset
+df = pd.read_excel(r"C:\Users\DANIEL\Downloads\Population_1.xlsx")
+
+# Let's say we're visualizing the population by country for a specific year
+# Replace 'Country Name' and '2010' with the actual column names from your dataset
+plt.figure(figsize=(10, 25))
+plt.barh(df['Country'], df['Population in 2020'])
+plt.xlabel('Distrubution of population')
+plt.ylabel('Country')
+plt.title('Population of Countries')
+plt.show()
+
